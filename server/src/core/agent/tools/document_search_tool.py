@@ -1,3 +1,8 @@
+from langchain.tools import tool
+from src.db.vector.chroma_client import doc_collection
+
+@tool("document_search_tool",return_direct=False)
+
 def document_search_tool(query: str) -> str:
     """Search through uploaded documents."""
     try:
