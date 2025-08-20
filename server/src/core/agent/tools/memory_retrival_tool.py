@@ -1,3 +1,7 @@
+from src.db.vector.chroma_client import memory_collection
+
+
+
 def memory_search_tool(query: str, session_id: str) -> str:
     """Search through chat history and memory."""
     try:
