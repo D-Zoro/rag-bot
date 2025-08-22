@@ -1,7 +1,11 @@
 from langchain_openai import ChatOpenAI 
 import os 
+from dotenv import load_dotenv
 
-API_KEY = os.getenv("AI_API_KEY")
+load_dotenv()
+
+
+API_KEY = os.getenv("API_KEY")
 
 llm = ChatOpenAI(
     model="gpt-3.5-turbo",
